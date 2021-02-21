@@ -56,6 +56,8 @@ echo "Clonando Modulos...";
   npm install;
   npm install sleep;
   npm install node-cmd;
+  npm install cjs;
+  npm install colors;
 
   echo "Instalando Nucleo";
   #cd /home/uslu/adplay-alone/;

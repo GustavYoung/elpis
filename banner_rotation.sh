@@ -41,8 +41,8 @@ else
 	do
 	/home/uslu/elpis/banner_sleep 333600;
 	( cmdpid="$BASHPID";
-          (sleep 25; sudo killall bannerimg2 && killall bannerimg2) \
-         & while !  /home/uslu/elpis/bannerimg2 $boxed -l 16 -k "$entry";
+          (sleep 25; sudo killall bannerimg3.bin && killall bannerimg3.bin) \
+         & while !  /home/uslu/elpis/bannerimg3.bin $boxed -t 45 -T blend -l 16 -k "$entry";
            do
                echo "Todo listo";
                exit;
@@ -50,3 +50,5 @@ else
 	done
 fi
 done
+#old method
+#
