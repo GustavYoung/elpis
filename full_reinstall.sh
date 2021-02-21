@@ -46,9 +46,10 @@ echo "Clonando Modulos...";
   echo "App ropongi :)";
   sleep 5;
   echo "Parchando Modulos...";
-  cp -R /home/uslu/elpis/dbus-native /home/uslu/elpis/node_modules/;
-  cp -R /home/uslu/elpis/omxplayer-controll-ucp /home/uslu/elpis/node_modules/;
-  cp -R /home/uslu/elpis/omxplayer-controll3 /home/uslu/elpis/node_modules/;
+  cp -R /home/uslu/elpis/mods/dbus-native /home/uslu/elpis/node_modules/;
+  cp -R /home/uslu/elpis/mods/omxplayer-controll-ucp /home/uslu/elpis/node_modules/;
+  cp -R /home/uslu/elpis/mods/omxplayer-controll3 /home/uslu/elpis/node_modules/;
+  cp -R /home/uslu/elpis/mods/node-schedule /home/uslu/elpis/node_modules/;
   
   echo "Instalando Nucleo";
   cd /home/uslu/elpis/;
@@ -66,8 +67,8 @@ echo "Clonando Modulos...";
   #sudo npm install node-cmd --unsafe-perms;
   sleep 10;
 echo "Instalar servicios..."
-sudo chmod +x /home/uslu/elpis/Llayer-main/banner_sleep;
-sudo chmod +x /home/uslu/elpis/Llayer-main/bannerimg2;
+sudo chmod +x /home/uslu/elpis/banner_sleep;
+sudo chmod +x /home/uslu/elpis/bannerimg2;
 sudo cp /home/uslu/elpis/Llayer-main /etc/init.d/Llayer-main;
 sudo cp /home/uslu/elpis/Llayer-banners /etc/init.d/Llayer-banners;
 sudo chmod +x /etc/init.d/Llayer-main;
