@@ -15,7 +15,6 @@ ng=`tput bold`
 reset=`tput sgr0`
 #echo "${red}red text ${green}green text${reset}"
 
-sleep 1;
 
 uxmal2_native='/home/uslu/uxmalstream/streamer/'
 uxmal2_mgrtd='/home/uslu/uxmal_2.0/'
@@ -67,6 +66,8 @@ echo "Clonando Modulos...";
   #sudo npm install node-cmd --unsafe-perms;
   sleep 10;
 echo "Instalar servicios..."
+sudo chmod +x /home/uslu/elpis/Llayer-main/banner_sleep;
+sudo chmod +x /home/uslu/elpis/Llayer-main/bannerimg2;
 sudo cp /home/uslu/elpis/Llayer-main /etc/init.d/Llayer-main;
 sudo cp /home/uslu/elpis/Llayer-banners /etc/init.d/Llayer-banners;
 sudo chmod +x /etc/init.d/Llayer-main;
