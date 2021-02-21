@@ -1,0 +1,34 @@
+#! /bin/sh
+# Starts and stops banners
+# /etc/init.d/Llayer-banners
+### BEGIN INIT INFO
+# Provides:             Banners
+# Required-Start:       $syslog
+# Required-Stop:        $syslog
+# Default-Start:        2 3 4 5
+# Default-Stop:         0 1 6
+# Short-Description:    Lbanners
+### END INIT INFO
+#Load up Banners when called
+case "$1" in
+
+start)
+        echo "Starting Llayer-banners..."
+        cd /home/uslu/elpis/;
+        sudo screen -dmS LlayerBans bash banner_rotation.sh;
+;;
+
+stop)
+        echo "Stopping Llayer-banners..."
+        sudo screen -S LlayerBans -X quit;
+;;
+
+restart)
+        echo "Restarting Llayer-banners..."
+        $0 stop
+        $0 start
+;;
+*)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac

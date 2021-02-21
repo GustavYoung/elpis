@@ -1,0 +1,37 @@
+#! /bin/sh
+# Starts and stops Llayer-main
+# /etc/init.d/Llayer-main
+### BEGIN INIT INFO
+# Provides:     Main iface for L
+# Required-Start:       $syslog
+# Required-Stop:        $syslog
+# Default-Start:        2 3 4 5
+# Default-Stop:         0 1 6
+# Short-Description:    Llayermain
+### END INIT INFO
+#Load up capa L when called
+case "$1" in
+
+start)
+        echo "Starting Llayer-main..."
+        cd /home/uslu/elpis/;
+        #sudo sh -c "TERM=linux setterm -foreground black -clear all >/dev/tty0";
+        sudo screen -dmS LlayerM bash Llayer_trigger.sh;
+;;
+
+stop)
+        echo "Stopping Llayer-main..."
+        sudo screen -S LlayerM -X quit;
+        #sudo killall omxplayer;
+        #sudo dd if=/dev/zero of=/dev/fb0;
+;;
+
+restart)
+        echo "Restarting Llayer-main..."
+        $0 stop
+        $0 start
+;;
+*)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
