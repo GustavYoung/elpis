@@ -60,7 +60,7 @@ running.Omx = omxp1;
 var job = schedule.scheduleJob(scheduleTime, function(){ showAd(getAdFile(adsDirPath)); });
 
 omxp3.on('finish',function(){
-	cmd.run('killall bannerimg2');
+	cmd.run('killall bannerimg3.bin');
 	logAndPrint('pass', 'showAd: finished');
     changeVideoPos(running.Omx, changeSpeed, vidHeight, devRes.height);
     nextJob();
