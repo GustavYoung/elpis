@@ -39,7 +39,6 @@ sudo service Llayer-main stop && sudo service Llayer-banners stop;
 echo "Purgando todas las instalaciones anteriores...";
 sudo rm -rf /home/uslu/Llayer_utils/;
 sudo rm -rf /home/uslu/adplay-alone/;
-sudo rm -rf /home/uslu/elements/;
 sudo rm fixl192.*;
 
 echo "Clonando Modulos...";
@@ -70,7 +69,7 @@ echo "Clonando Modulos...";
   sleep 10;
 echo "Instalar servicios..."
 sudo chmod +x /home/uslu/elpis/banner_sleep;
-sudo chmod +x /home/uslu/elpis/bannerimg2;
+sudo chmod +x /home/uslu/elpis/bannerimg3.bin;
 sudo cp /home/uslu/elpis/Llayer-main /etc/init.d/Llayer-main;
 sudo cp /home/uslu/elpis/Llayer-banners /etc/init.d/Llayer-banners;
 sudo chmod +x /etc/init.d/Llayer-main;

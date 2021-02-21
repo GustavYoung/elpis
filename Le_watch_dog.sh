@@ -26,7 +26,7 @@ NEW_SUM=`find $DIR_TO_CHECK/* \! -path "$PATH_TO_EXCLUDE"  -print0| xargs -0 du 
 if [ "$OLD_SUM" != "$NEW_SUM" ]
 then
     echo 'El Contenido ha cambiado generando nueva Playlist';
-    if [[ `lsof | grep /home/uslu/elements/videos/` ]]
+    if [[ `lsof | grep /home/uslu/elements/Video_chico/` ]]
         then
         sleep 33;
         echo "espera por L activa" >> log_$(date +%Y_%m_%d).txt;
