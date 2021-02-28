@@ -109,7 +109,7 @@ function showAd(adFile) {
 		'win':				winPos			//
 	};
 	running.Omx.getSource(function(err, source){
-		if (typeof source !== 'undefined' && source.match(/\/uploads\/ads\//gi)) {
+		if (typeof source !== 'undefined' && source.match(/\/uploads\/sharedday\//gi)) {
 			logAndPrint('showAd: a full size ad video is been played.. skipping.');
 			setTimeout(function(){ showAd(getAdFile(adsDirPath)); }, 60000);
 		} else {
