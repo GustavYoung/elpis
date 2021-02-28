@@ -68,19 +68,19 @@ omxp3.on('finish',function(){
 
 omxp1.on('aboutToFinish15s',function(){
     console.log('About to finish T minus 15 + 15 next');
-	sleep.sleep(30);
+	sleep.sleep(16);
 	console.log('Wait 30 OK');
 });
 
 omxp1.on('aboutToFinish10s',function(){
 	console.log('About to finish T minus 10 + 15 next');
-	sleep.sleep(30);
+	sleep.sleep(16);
 	console.log('Wait 25 OK');
 });
 
 omxp1.on('aboutToFinish5s',function(){
 	console.log('About to finish T minus 5 + 15 next');
-	sleep.sleep(30);
+	sleep.sleep(16);
 	console.log('Wait 20 OK');
 });
 

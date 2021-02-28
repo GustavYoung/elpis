@@ -15,12 +15,12 @@ case "$1" in
 start)
         echo "Starting Llayer-banners..."
         cd /home/uslu/elpis/;
-        sudo screen -dmS LlayerBans bash banner_rotation.sh;
+        sudo screen -dmS Bans bash banner_rotation.sh;
 ;;
 
 stop)
         echo "Stopping Llayer-banners..."
-        sudo screen -S LlayerBans -X quit;
+        sudo screen -S Bans -X quit;
 ;;
 
 restart)

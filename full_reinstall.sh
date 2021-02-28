@@ -80,6 +80,10 @@ sudo update-rc.d Llayer-main defaults;
 sleep 2;
 sudo update-rc.d Llayer-banners defaults;
 sleep 2;
+sudo update-rc.d -f streamer disable
+sudo update-rc.d -f AdsPlayer enable
+sudo update-rc.d -f Llayer-banners enable
+sudo update-rc.d -f Llayer-main enable
 reset;
 clear;
 echo "${green}${bg_black}${ng}Verifica que el crontab tenga las siguientes lineas activas."
@@ -91,3 +95,7 @@ sudo crontab -e;
 sudo bash /home/uslu/elpis/Le_watch_dog.sh;
 clear;
 read -p "${green}${bg_black}${ng}Eso es todo. Presiona ENTER para salir."
+sudo update-rc.d -f streamer disable
+sudo update-rc.d -f AdsPlayer enable
+sudo update-rc.d -f Llayer-banners enable
+sudo update-rc.d -f Llayer-main enable
