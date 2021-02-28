@@ -39,7 +39,7 @@ sudo service Llayer-main stop && sudo service Llayer-banners stop;
 echo "Purgando todas las instalaciones anteriores...";
 sudo rm -rf /home/uslu/Llayer_utils/;
 sudo rm -rf /home/uslu/adplay-alone/;
-sudo rm fixl192.*;
+sudo rm /home/uslufixl192.*;
 
 echo "Clonando Modulos...";
   echo "App ropongi :)";
@@ -83,8 +83,9 @@ sleep 2;
 reset;
 clear;
 echo "${green}${bg_black}${ng}Verifica que el crontab tenga las siguientes lineas activas."
-echo "*/3 * * * * bash /home/uslu/elpis/elements_sync.sh"
+echo " "
 echo "*/3 * * * * bash /home/uslu/elpis/Le_watch_dog.sh"
+echo " "
 read -p "Presiona ENTER cuando estes listo para editar el crontab.${reset}"
 sudo crontab -e;
 sudo bash /home/uslu/elpis/Le_watch_dog.sh;
