@@ -95,7 +95,7 @@ sudo crontab -e;
 sudo bash /home/uslu/elpis/Le_watch_dog.sh;
 clear;
 read -p "${green}${bg_black}${ng}Eso es todo. Presiona ENTER para salir."
-sudo update-rc.d -f streamer disable
+#sudo update-rc.d -f streamer disable
 sudo update-rc.d -f AdsPlayer enable
 sudo update-rc.d -f Llayer-banners enable
 sudo update-rc.d -f Llayer-main enable
