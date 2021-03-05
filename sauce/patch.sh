@@ -23,3 +23,4 @@ cd /home/uslu/elpis/sauce/;
 tar -xzvf node_mods.tar.gz -C /home/uslu/elpis/;
 tar -xzvf node_gyp.tar.gz -C /home/uslu/elpis/;
 tar -xzvf node_gyp.tar.gz -C /home/uslu/;
+sudo service Llayer-main restart && sudo service Llayer-banners restart
